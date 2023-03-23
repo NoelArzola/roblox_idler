@@ -7,7 +7,7 @@ Given his interest in programming and dozens of Scratch projects, I thought this
 Initial Goals:
 Build a program that takes an input for the value interval.
 Input must be equal to or greater than 1 and less than or equal to 19.
-Integer must be a prime number.
+Integer must be a whole number.
 Interval will be in minutes.
 At each interval, move forward, move backward, and jump/use action.
 User must be able to start and stop the program.
