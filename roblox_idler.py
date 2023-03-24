@@ -20,19 +20,21 @@ WINDOW_SIZE = 235
 
 app = QApplication([])
 interval_widget = QWidget()
-class Window(QMainWindow):
+class IdlerWindow(QMainWindow):
+    """Roblox Idlers main window"""
     def __init__(self):
-        super().__init__(parent=None)
+        super().__init__()
         self.setWindowTitle("Roblox Idler")
-        self.setCentralWidget(interval_widget)
+        self.setFixedSize(WINDOW_SIZE, WINDOW_SIZE)
+        centralWidget = QWidget(self)
+        self.setCentralWidget(centralWidget)
 
-layout = QFormLayout()
-layout.addRow("Enter a number from 1-19", QLineEdit())
-layout.addWidget(QPushButton("Start"))
-
-interval_widget.setLayout(layout)
+def main():
+    """Idlers main function"""
+    idlerApp = QApplication([])
+    idlerWindow = IdlerWindow()
+    idlerWindow.show()
+    sys.exit(idlerApp.exec())
 
 if __name__ == "__main__":
-    window = Window()
-    window.show()
-    sys.exit(app.exec())
+    main()
