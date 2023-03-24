@@ -16,25 +16,33 @@ from PyQt6.QtWidgets import (
     QPushButton
 )
 
-WINDOW_SIZE = 235
+# WINDOW_SIZE = 235
 
-app = QApplication([])
-interval_widget = QWidget()
 class IdlerWindow(QMainWindow):
     """Roblox Idlers main window"""
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Roblox Idler")
-        self.setFixedSize(WINDOW_SIZE, WINDOW_SIZE)
-        centralWidget = QWidget(self)
-        self.setCentralWidget(centralWidget)
+        # self.setFixedSize(WINDOW_SIZE, WINDOW_SIZE)
+        self.generalLayout = QFormLayout()
+        central_widget = QWidget(self)
+        central_widget.setLayout(self.generalLayout)
+        self.setCentralWidget(central_widget)
+        self._create_input(self.generalLayout)
+        self._create_buttons(self.generalLayout)
+
+    def _create_input(self, layout):
+        layout.addRow("Enter a number from 1-19", QLineEdit())
+
+    def _create_buttons(self, layout):  
+        layout.addWidget(QPushButton("Start")) 
 
 def main():
     """Idlers main function"""
-    idlerApp = QApplication([])
-    idlerWindow = IdlerWindow()
-    idlerWindow.show()
-    sys.exit(idlerApp.exec())
+    idler_app = QApplication([])
+    idler_window = IdlerWindow()
+    idler_window.show()
+    sys.exit(idler_app.exec())
 
 if __name__ == "__main__":
     main()
