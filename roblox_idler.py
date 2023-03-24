@@ -16,6 +16,7 @@ from PyQt6.QtWidgets import (
     QPushButton
 )
 
+ERROR_MSG = "ERROR: Enter a valid number"
 # WINDOW_SIZE = 235
 
 class IdlerWindow(QMainWindow):
@@ -32,7 +33,9 @@ class IdlerWindow(QMainWindow):
         self._create_buttons(self.generalLayout)
 
     def _create_input(self, layout):
-        layout.addRow("Enter a number from 1-19", QLineEdit())
+        input_field = QLineEdit()
+        input_field.setMaxLength(2)
+        layout.addRow("Enter a number from 1-19", input_field)
 
     def _create_buttons(self, layout):  
         layout.addWidget(QPushButton("Start")) 
@@ -46,3 +49,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def validate_input(input):
+    if (not isinstance(input, int)):
+        return False
+    if (not input >= 1 and not input <= 19):
+        return False
+    return True
