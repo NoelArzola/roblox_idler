@@ -3,6 +3,7 @@
 """Roblox Idler is an idling tool for Roblox built with Python and PyQT"""
 
 import sys
+import keyboard
 
 from PyQt6.QtWidgets import (
     QApplication,
@@ -35,7 +36,7 @@ class IdlerWindow(QMainWindow):
     def _create_input(self, layout):
         input_field = QLineEdit()
         input_field.setMaxLength(2)
-        layout.addRow("Enter a number from 1-19", input_field)
+        layout.addRow("How often should be move your avatar?", input_field)
 
     def _create_buttons(self, layout):  
         layout.addWidget(QPushButton("Start")) 
@@ -50,9 +51,20 @@ def main():
 if __name__ == "__main__":
     main()
 
-def validate_input(input):
+def validate_input(input = 5):
     if (not isinstance(input, int)):
         return False
-    if (not input >= 1 and not input <= 19):
+    if (input < 1 or input > 19):
         return False
     return True
+
+def run_idler():
+    # display dialog box and run the code for the right amount of time
+    # start_time = 
+    keyboard.wait("1")
+    keyboard.write("20")
+    keyboard.press("w")
+    keyboard.send("a")
+    keyboard.send("s")
+    keyboard.send("d")
+    keyboard.send("space")
