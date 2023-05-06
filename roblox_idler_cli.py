@@ -1,6 +1,6 @@
 # roblox_idler.py
 
-"""Roblox Idler is an idling tool for Roblox built with Python and PyQT"""
+"""Roblox Idler is an idling tool for Roblox built with Python"""
 
 import keyboard
 import time
@@ -52,7 +52,7 @@ class Idler():
     def _end_simulation(self):
         global keep_alive
         keep_alive = False
-        print('Q was pressed, exiting after the current job.\nTo quit immediately hit "ctrl/cmd+c"')
+        print('Q was pressed, exiting after the current job.\nTo quit immediately hit "ctrl+c"')
 
     def _run_idler(self) :
         if (self._validate_input(self.user_input)):
