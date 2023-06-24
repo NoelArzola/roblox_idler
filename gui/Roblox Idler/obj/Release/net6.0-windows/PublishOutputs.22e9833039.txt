@@ -1,0 +1,5 @@
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Release\net6.0-windows\publish\Roblox Idler.exe
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Release\net6.0-windows\publish\Roblox Idler.dll
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Release\net6.0-windows\publish\Roblox Idler.deps.json
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Release\net6.0-windows\publish\Roblox Idler.runtimeconfig.json
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Release\net6.0-windows\publish\Roblox Idler.pdb
