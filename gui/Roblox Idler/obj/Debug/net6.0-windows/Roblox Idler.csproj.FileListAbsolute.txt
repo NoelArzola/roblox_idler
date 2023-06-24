@@ -1,0 +1,51 @@
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.exe
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.deps.json
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.runtimeconfig.json
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.dll
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.pdb
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.AssemblyReference.cache
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.GenerateResource.cache
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.AssemblyInfoInputs.cache
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.AssemblyInfo.cs
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.CoreCompileInputs.cache
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.dll
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\refint\Roblox Idler.dll
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.pdb
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.genruntimeconfig.cache
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\ref\Roblox Idler.dll
+C:\Users\Noel\source\repos\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox_Idler.App.resources
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.exe
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.deps.json
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.runtimeconfig.json
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.dll
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.pdb
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.AssemblyReference.cache
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox_Idler.App.resources
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.GenerateResource.cache
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.AssemblyInfoInputs.cache
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.AssemblyInfo.cs
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.CoreCompileInputs.cache
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.dll
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\refint\Roblox Idler.dll
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.pdb
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.genruntimeconfig.cache
+C:\Users\Noel Arzola\Desktop\Roblox Idler\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\ref\Roblox Idler.dll
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.exe
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.deps.json
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.runtimeconfig.json
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.dll
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\bin\Debug\net6.0-windows\Roblox Idler.pdb
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.AssemblyReference.cache
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox_Idler.App.resources
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.GenerateResource.cache
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.AssemblyInfoInputs.cache
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.AssemblyInfo.cs
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.csproj.CoreCompileInputs.cache
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.dll
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\refint\Roblox Idler.dll
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.pdb
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\Roblox Idler.genruntimeconfig.cache
+C:\Users\Noel\Desktop\New folder\Roblox_Idler v00\Roblox Idler\Roblox Idler\obj\Debug\net6.0-windows\ref\Roblox Idler.dll
