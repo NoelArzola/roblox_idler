@@ -15,10 +15,8 @@ namespace Roblox_Idler
             await AddDelay(1000);
             keepAlive = false;
             EnableButton(btnStart);
-            //durationTimer.Stop();
-            //durationTimer.Reset();
+            ResetTimer(statusBarTimer);
             ResetMessage(statusBarMessage);
-            //ResetTimer(statusBarTimer);
         }
 
         private async void btnStart_ClickAsync(object sender, EventArgs e)
@@ -28,7 +26,6 @@ namespace Roblox_Idler
             keepAlive = true;
             EnableButton(btnStop);
             RunningMessage(statusBarMessage);
-            //durationTimer.Start();
             StartTimer(statusBarTimer);
             _ = SimulateKeystrokes(usrInput.Value);
         }

@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using System.Timers;
+using WinFormsTimer = System.Windows.Forms.Timer;
 
 namespace Roblox_Idler
 {
@@ -10,7 +11,7 @@ namespace Roblox_Idler
         /// </summary>
         public static bool keepAlive = true;
         public static Stopwatch durationTimer = new Stopwatch();
-        public static TimeSpan ts = durationTimer.Elapsed;
+        public static WinFormsTimer updateTimer = new WinFormsTimer();
 
         [STAThread]
 
@@ -97,12 +98,27 @@ namespace Roblox_Idler
 
         public static void StartTimer(ToolStripStatusLabel s)
         {
-            s.Text = $"Total Duration: {ts}";
+            if (!durationTimer.IsRunning)
+            {
+                durationTimer.Start();
+                updateTimer.Interval = 1000; // Set the timer interval to 1000 ms
+                updateTimer.Tick += (sender, e) => UpdateTimerDisplay(s);
+                updateTimer.Start(); // Start the timer
+            }
+            s.Text = $"Total Duration: {durationTimer.Elapsed.ToString("mm\\:ss")}";
         }
 
         public static void ResetTimer(ToolStripStatusLabel s)
         {
-            s.Text = "Total Duration: 00:00:00:00";
+            durationTimer.Reset();
+            updateTimer.Stop(); // Stop the timer
+            UpdateTimerDisplay(s); // Update the display after resetting
+        }
+
+        public static void UpdateTimerDisplay(ToolStripStatusLabel s)
+        {
+            // Update the label/status bar with the formatted elapsed time
+            s.Text = $"Total Duration: {durationTimer.Elapsed:mm\\:ss}";
         }
 
     }
