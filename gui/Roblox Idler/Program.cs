@@ -1,8 +1,9 @@
 using System.Diagnostics;
-using System.Timers;
 using WinFormsTimer = System.Windows.Forms.Timer;
+using SharpDX.DirectInput;
+using Keyboard = SharpDX.DirectInput.Keyboard;
 
-namespace Roblox_Idler
+namespace RobloxIdler
 {
     internal static class Program
     {
@@ -12,13 +13,29 @@ namespace Roblox_Idler
         public static bool keepAlive = true;
         public static Stopwatch durationTimer = new Stopwatch();
         public static WinFormsTimer updateTimer = new WinFormsTimer();
+        // Create a DirectInput object
+        private static DirectInput directInput = new DirectInput();
+        // Create a keyboard device
+        private static Keyboard? keyboard;
 
         [STAThread]
 
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            // Initialize DirectInput keyboard
+            keyboard = new Keyboard(directInput);
+            
+            try
+            {
+                keyboard.Acquire();
+            }
+            catch (Exception ex)
+            {
+                // Log or print the exception details
+                Debug.WriteLine($"Error acquiring keyboard: {ex.Message}");
+            }
+
+            //keyboard.Acquire();
             ApplicationConfiguration.Initialize();
             Application.Run(new App());
         }
@@ -30,27 +47,59 @@ namespace Roblox_Idler
             int keyDelay = 1000;
             string[] keystrokes = { "W", "A", "S", "D", " " };
 
-            while (keepAlive)
+            await Task.Run(async () =>
             {
-                foreach (string keystroke in keystrokes)
+                while (keepAlive)
                 {
-                    if (keepAlive && (keystroke != " "))
+                    foreach (string keystroke in keystrokes)
                     {
-                        SendKeys.SendWait($"{keystroke}");
-                        await Task.Delay(keyDelay);
-                    }
-                    else if (keepAlive)
-                    {
-                        SendKeys.SendWait($"{keystroke}");
-                        await Task.Delay(loopDelay);
+                        if (keepAlive && (keystroke != " "))
+                        {
+                            // Simulate key press using DirectInput
+                            SimulateKeyPress(keystroke);
+                            await Task.Delay(keyDelay);
+                        }
+                        else if (keepAlive)
+                        {
+                            // Simulate key press using DirectInput
+                            SimulateKeyPress(keystroke);
+                            await Task.Delay(loopDelay);
+                        }
                     }
                 }
+            });
+        }
+
+        // Helper method to simulate key press using DirectInput
+        private static void SimulateKeyPress(string key)
+        {
+            // Simulate key press
+            var keyState = new KeyboardState();
+            var keyCode = ConvertKeyToKeyCode(key);
+            keyState.PressedKeys.Add(keyCode[0]);
+            keyState.IsPressed(keyCode[0]);
+
+            // Allow time for the application to process the input
+            Application.DoEvents();
+        }
+
+        // Helper method to convert string key to DirectInput KeyCode
+        private static Key[] ConvertKeyToKeyCode(string key)
+        {
+            switch (key.ToUpper())
+            {
+                case "W": return new Key[] { Key.W };
+                case "A": return new Key[] { Key.A };
+                case "S": return new Key[] { Key.S };
+                case "D": return new Key[] { Key.D };
+                case " ": return new Key[] { Key.Space };
+                default: return new Key[] { };
             }
         }
 
         public static async Task StartMessage(ToolStripStatusLabel s)
         {
-            int i = 10;
+            int i = 5;
             string startMessage;
 
             while (i >= 0)
@@ -69,7 +118,6 @@ namespace Roblox_Idler
 
         public static void RunningMessage(ToolStripStatusLabel s)
         {
-            Debug.WriteLine("I should be updating!");
             string runningMessage = "The idler is running!";
             s.Text = runningMessage;
         }

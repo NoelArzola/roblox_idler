@@ -1,0 +1,7 @@
+C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Release\net6.0-windows\publish\RobloxIdler.exe
+C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Release\net6.0-windows\publish\RobloxIdler.dll
+C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Release\net6.0-windows\publish\RobloxIdler.deps.json
+C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Release\net6.0-windows\publish\RobloxIdler.runtimeconfig.json
+C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Release\net6.0-windows\publish\RobloxIdler.pdb
+C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Release\net6.0-windows\publish\SharpDX.dll
+C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Release\net6.0-windows\publish\SharpDX.DirectInput.dll

@@ -1,5 +1,5 @@
-using static Roblox_Idler.Program;
-namespace Roblox_Idler
+using static RobloxIdler.Program;
+namespace RobloxIdler
 {
     public partial class App : Form
     {

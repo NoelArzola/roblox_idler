@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>RobloxIdler</id>
+    <version>1.0.0</version>
+    <authors>RobloxIdler</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="57935491bc0fa6eaa8fa78254b439d6e8ff6acce" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="SharpDX" version="4.2.0" exclude="Build,Analyzers" />
+        <dependency id="SharpDX.DirectInput" version="4.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Debug\net6.0-windows\RobloxIdler.runtimeconfig.json" target="lib\net6.0-windows7.0\RobloxIdler.runtimeconfig.json" />
+    <file src="C:\Users\Noel\source\repos\roblox_idler\gui\Roblox Idler\bin\Debug\net6.0-windows\RobloxIdler.dll" target="lib\net6.0-windows7.0\RobloxIdler.dll" />
+  </files>
+</package>

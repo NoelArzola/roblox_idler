@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Roblox Idler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ee3c26c346374af6c184525a88a63e5c565e8d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Roblox Idler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Roblox Idler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

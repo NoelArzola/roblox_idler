@@ -1,4 +1,4 @@
-﻿namespace Roblox_Idler
+﻿namespace RobloxIdler
 {
     partial class App
     {
@@ -102,7 +102,7 @@
             // 
             statusBarTimer.Margin = new Padding(30, 3, 0, 2);
             statusBarTimer.Name = "statusBarTimer";
-            statusBarTimer.Size = new Size(144, 17);
+            statusBarTimer.Size = new Size(114, 17);
             statusBarTimer.Text = "Total Duration: 00:00";
             statusBarTimer.TextAlign = ContentAlignment.MiddleRight;
             // 
