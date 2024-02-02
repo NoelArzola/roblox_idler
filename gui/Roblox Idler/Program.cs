@@ -1,5 +1,7 @@
 using System.Diagnostics;
 using WinFormsTimer = System.Windows.Forms.Timer;
+using WindowsInput;
+using WindowsInput.Native;
 
 namespace Roblox_Idler
 {
@@ -16,8 +18,6 @@ namespace Roblox_Idler
 
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new App());
         }
@@ -26,27 +26,57 @@ namespace Roblox_Idler
         {
             int uInputToInt = Convert.ToInt32(uInput);
             int loopDelay = uInputToInt * 60000;
-            int keyDelay = 1000;
             string[] keystrokes = { "W", "A", "S", "D", " " };
+            InputSimulator inputSimulator = new InputSimulator();
 
             while (keepAlive)
             {
                 foreach (string keystroke in keystrokes)
                 {
-                    if (keepAlive && (keystroke != " "))
+                    if (!keepAlive)
+                        break;
+
+                    VirtualKeyCode keyCode = GetVirtualKeyCode(keystroke);
+
+                    inputSimulator.Keyboard.KeyDown(keyCode); // Press the key
+                    await Task.Delay(5000); // Hold the key for 5 seconds
+                    inputSimulator.Keyboard.KeyUp(keyCode); // Release the key
+
+                    // If the keystroke is not a space, introduce a delay before the next keypress
+                    if (keystroke != " ")
                     {
-                        SendKeys.SendWait($"{keystroke}");
-                        await Task.Delay(keyDelay);
+                        await Task.Delay(1000); // Delay before the next keypress
                     }
-                    else if (keepAlive)
+                    else
                     {
-                        SendKeys.SendWait($"{keystroke}");
-                        await Task.Delay(loopDelay);
+                        await Task.Delay(loopDelay); // If the keystroke is a space, delay before repeating the loop
                     }
                 }
             }
         }
 
+        private static VirtualKeyCode GetVirtualKeyCode(string key)
+        {
+            // Map the key string to the corresponding virtual key code
+            switch (key.ToUpper())
+            {
+                case "W":
+                    return VirtualKeyCode.VK_W;
+                case "A":
+                    return VirtualKeyCode.VK_A;
+                case "S":
+                    return VirtualKeyCode.VK_S;
+                case "D":
+                    return VirtualKeyCode.VK_D;
+                case " ":
+                    return VirtualKeyCode.SPACE;
+                default:
+                    throw new ArgumentException($"Unsupported key: {key}");
+            }
+        }
+        /// <summary>
+        ///     Show a start message to give them enough time to switch the game to the foreground 
+        /// </summary>
         public static async Task StartMessage(ToolStripStatusLabel s)
         {
             int i = 5;

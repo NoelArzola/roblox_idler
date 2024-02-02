@@ -5,7 +5,24 @@
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v6.0": {}
+    ".NETCoreApp,Version=v6.0": {
+      "InputSimulatorPlus2/1.0.9": {
+        "runtime": {
+          "lib/net20/WindowsInput.dll": {
+            "assemblyVersion": "1.0.9.0",
+            "fileVersion": "1.0.9.0"
+          }
+        }
+      }
+    }
   },
-  "libraries": {}
+  "libraries": {
+    "InputSimulatorPlus2/1.0.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hs/NB5QrpbU97o1KR56q3OV+n7d5EP3lrKzqxRcU24JRIvz287HG1j39wqg8FB2YWWYPASKZERLuIQjZXEAqyw==",
+      "path": "inputsimulatorplus2/1.0.9",
+      "hashPath": "inputsimulatorplus2.1.0.9.nupkg.sha512"
+    }
+  }
 }

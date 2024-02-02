@@ -1,11 +1,42 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "InputSimulatorPlus2/1.0.9": {
+        "type": "package",
+        "compile": {
+          "lib/net20/WindowsInput.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net20/WindowsInput.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "InputSimulatorPlus2/1.0.9": {
+      "sha512": "hs/NB5QrpbU97o1KR56q3OV+n7d5EP3lrKzqxRcU24JRIvz287HG1j39wqg8FB2YWWYPASKZERLuIQjZXEAqyw==",
+      "type": "package",
+      "path": "inputsimulatorplus2/1.0.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "inputsimulatorplus2.1.0.9.nupkg.sha512",
+        "inputsimulatorplus2.nuspec",
+        "lib/net20/WindowsInput.dll",
+        "lib/net20/WindowsInput.pdb",
+        "lib/net20/WindowsInput.xml"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "InputSimulatorPlus2 >= 1.0.9"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Noel\\.nuget\\packages\\": {},
@@ -51,6 +82,12 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "InputSimulatorPlus2": {
+            "target": "Package",
+            "version": "[1.0.9, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -73,5 +110,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'InputSimulatorPlus2 1.0.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "InputSimulatorPlus2",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
 }
