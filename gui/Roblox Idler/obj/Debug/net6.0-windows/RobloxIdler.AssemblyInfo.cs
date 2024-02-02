@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RobloxIdler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+57935491bc0fa6eaa8fa78254b439d6e8ff6acce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5bc0c38e1a5333c6de5159a82bff7ed769000d1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RobloxIdler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RobloxIdler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

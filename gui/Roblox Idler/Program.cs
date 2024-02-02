@@ -1,5 +1,4 @@
 using System.Diagnostics;
-using System.Timers;
 using WinFormsTimer = System.Windows.Forms.Timer;
 
 namespace Roblox_Idler
@@ -50,7 +49,7 @@ namespace Roblox_Idler
 
         public static async Task StartMessage(ToolStripStatusLabel s)
         {
-            int i = 10;
+            int i = 5;
             string startMessage;
 
             while (i >= 0)
@@ -69,7 +68,6 @@ namespace Roblox_Idler
 
         public static void RunningMessage(ToolStripStatusLabel s)
         {
-            Debug.WriteLine("I should be updating!");
             string runningMessage = "The idler is running!";
             s.Text = runningMessage;
         }
